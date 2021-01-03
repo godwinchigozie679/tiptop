@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Euphoria+Script&display=swap');
+
+*{box-sizing: border-box;
+margin: 0px;
+padding: 0px}
+
+body{
+    overflow-x: hidden;
+    
+}
+
+#header{
+    position: fixed;
+    z-index: 85 !important;
+    top: 0;
+    width: 100%;
+}
+.main-nav-container{
+    display: flex;
+    position: fixed; 
+    top: 57px;       
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;    
+    color:rgb(51, 4, 4);
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bolder; 
+    border-bottom: 2px solid rgb(184, 133, 4);
+    width: 100%;
+    z-index: 85 !important;  
+    font-family: cursive !important; 
+}
+
+.logo{
+    font-size: larger;    
+    font-family: cursive !important;
+}
+
+.nav-item{
+    display: inline-flex;
+    list-style: none;
+    z-index: 85 !important;         
+    
+
+}
+
+
+
+.active{
+    border-bottom: solid 2px gold;
+
+
+}
+
+ a{
+    text-decoration: none;
+    color: rgb(90, 51, 2);   
+    font-weight: bolder; 
+    font-family: cursive !important;
+    
+
+}
+
+
+a:hover{
+    color: rgb(240, 142, 22); 
+}
+
+#icon-nav1{
+    display: none;     
+
+}
+
+.nav-container{
+    display: block;
+}
+
+
+@media(max-width: 1000px){
+
+    .main-nav-container{
+        margin-top: 0px !important;
+        padding-top: 5px !important;
+        top: 50px;
+        border-top: 2px solid rgb(99, 85, 9);
+        border-bottom: 2px solid rgb(99, 85, 9);
+        border-right: 2px solid rgb(99, 85, 9);
+        
+    }
+
+    .nav-container{
+        display: none;
+    }
+
+
+    .responsive{
+        display: none;
+        
+       
+    }
+
+
+    
+    
+   
+    
+    #icon-nav1{
+        display: block;    
+        position: fixed;
+        top: 18px;
+        color: antiquewhite; 
+        right: 10px;
+        z-index: 88;
+        font-size: 30px;
+        cursor: pointer;
+    
+}
+            
+    
+    
+.nav-item{
+    display: block;   
+    width: 100%;
+        
+    
+
+}
+
+    .active{
+        border-bottom: none;
+    
+    
+    }
+
+    a{
+        text-decoration: none;        
+        border-bottom: none;
+        color: rgb(90, 51, 2);   
+        font-family: cursive !important;
+      
+
+           }
+
+        a:hover{
+            background-color: transparent;
+        }  
+    
+
+}
